@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,100;1,100&family=Roboto:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+   margin: 0;
+}
+
+
+.h-container {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 0;
+  left: 0;
+	width: 375px;
+	height: 667px;
+	text-align: center;
+	background: #FB6B6B;
+	border: 1px solid #DBDBDB;
+}
+
+.logo{
+	width: 136px;
+	height: 161px;
+	margin-bottom: 13px;
+}
+
+.title {
+	width: 257px;
+	height: 59px;
+	margin-bottom: 30px;
+	font-family: 'Righteous';
+	font-style: bold;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 45px;
+	letter-spacing: -0.012em;
+	color: #FFFFFF;
+}
+
+.input-zap {
+	position: relative;
+	width: 246px;
+	height: 43px;
+	margin-bottom: 18px;
+	background: #FFFFFF;
+	border-radius: 5px;
+}
+
+
+.start-btn {
+	width: 246px;
+	height: 54px;
+	background: #FFFFFF;
+	border: 1px solid #D70900;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	font-family: 'Recursive';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #D70900;
+}
+

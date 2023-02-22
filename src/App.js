@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/homepage.css"
+import HomePage from "./components/HomePage";
+import Deck from "./components/Deck";
+import { useState } from "react";
+
 
 function App() {
+
+  const [visible, SetVisible] = useState(true);
+  const [meta, SetMeta] = useState(1);
+
+
+  function isVisible(value){
+    SetVisible(value);
+  }
+
+
+  // Automaticamente seta o valor de metas para 1, caso for menor ou igual a 0(valor mínimo)
+  if (meta <= 0)
+    SetMeta(1)
+
+  // Automaticamente seta o valor de metas para 4, caso for maior que 4(valor maximo)
+  if(meta > 4) 
+    SetMeta(4);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      { visible ? 
+      <HomePage isVisible={isVisible} SetMeta={SetMeta}/>
+      : <Deck reset={isVisible} meta={meta}/>
+      }
+    </>
   );
 }
 
