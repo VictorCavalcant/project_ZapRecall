@@ -17,11 +17,10 @@ input::-webkit-inner-spin-button {
 	position: absolute;
 	top: 0;
   left: 0;
-	width: 375px;
+	width: 377px;
 	height: 667px;
 	text-align: center;
 	background: #FB6B6B;
-	border: 1px solid #DBDBDB;
 }
 
 .logo{
@@ -49,9 +48,46 @@ input::-webkit-inner-spin-button {
 	height: 43px;
 	margin-bottom: 18px;
 	background: #FFFFFF;
+	color: #ADADAD;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;	
+	border-radius: 5px;
+	border: none;
+}
+
+.select-deck {
+	position: relative;
+	width: 246px;
+	height: 43px;
+	margin-bottom: 18px;
+	background: #FFFFFF;
+	color: #ADADAD;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
 	border-radius: 5px;
 }
 
+.inactive-btn {
+	position: relative;
+	width: 246px;
+	height: 54px;
+	background: #E8E8E8;
+	font-family: 'Recursive';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #C0C0C0;
+	border-radius: 5px;
+	border: none;
+}
 
 .start-btn {
 	width: 246px;

@@ -9,11 +9,11 @@ const Result = (props) => {
 	const {ansImg, numA, result, reset, resetStates, checkZaps, meta} = props;
 
 	function Reset() {
-		reset(true);
+		reset();
 		resetStates(0,[]);
 	}
 
-	const defaultCheck = (checkZaps() !== meta) && numA === 4;
+	const defaultCheck = (checkZaps() < meta) && numA === 4;
 
 	return (
 		<>

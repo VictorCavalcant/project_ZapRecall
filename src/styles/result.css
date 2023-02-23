@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
 
 .d-footer {
-	position: absolute;
+	position: relative;
 	display: flex;
+	overflow: hidden;
 	flex-direction: column;
 	justify-content: flex-end;
-	bottom: 0;
+	bottom: -70px;
 	align-items: center;
 	width: 375px;
 	height: 70px;

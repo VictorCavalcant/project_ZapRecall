@@ -7,6 +7,7 @@
 	left: 0;
 	top: 0;
 	display: flex;
+	background: #FB6B6B;
 	flex-direction: column-reverse;
 	width: 375px;
 	height: 657px;
@@ -14,16 +15,17 @@
 
 .d-container {
 	box-sizing: border-box;
+	overflow: scroll;
+	overflow-x: hidden;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items: center;
-	position: absolute;
-	width: 375px;
+	position: relative;
+	width: 377px;
   height: 667px;
 	text-align: center;
 	background: #FB6B6B;
-	border: 1px solid #DBDBDB;
 }
 
 .d-header {

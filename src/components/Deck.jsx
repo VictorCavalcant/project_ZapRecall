@@ -8,25 +8,7 @@ import Result from "./Result"
 const Deck = (props) => {
 	const [numA, setNumA] = useState(0);
 	const [ansImg, setAnsImg] = useState([]);
-	const {reset, meta} = props;
-	const deck = [
-		{
-			question: "O que é um JSX?",
-			answer: "JSX é uma sintaxe para escrever HTML dentro do JS"
-		},
-		{
-			question: "O React é __",
-			answer: "uma biblioteca JavaScript para construção de interfaces"
-		},
-		{
-			question: "Componentes devem iniciar com __",
-			answer: "letra maiúscula"
-		},
-		{
-			question: "O ReactDOM nos ajuda __",
-			answer: "interagindo com a DOM para colocar componentes React na mesma"
-		}
-]
+	const {reset, meta, deck} = props;
 
 	function checkZaps() {
 		let zapCount = 0;
