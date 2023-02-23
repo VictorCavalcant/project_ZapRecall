@@ -36,7 +36,7 @@ function App() {
     <>
 
       { visible ? 
-      <HomePage isVisible={isVisible} SetMeta={SetMeta} meta={meta} SetDeck={SetDeck}/>
+      <HomePage isVisible={isVisible} SetMeta={SetMeta} meta={meta} SetDeck={SetDeck} deck={deck}/>
       : <Deck reset={ResetHomeStates} meta={meta} deck={deck}/>
       }
     </>

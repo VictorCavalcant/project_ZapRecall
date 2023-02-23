@@ -10,7 +10,7 @@ const HomePage = (props) => {
 	const [deck_act, SetDeck_act] = useState("");
 
 	let value = true;
-	const {isVisible, SetMeta, meta, SetDeck} = props;
+	const {isVisible, SetMeta, meta, SetDeck, deck} = props;
 
 	function hideScreen() {
 		if(btn_act !== "inactive-btn") {
@@ -29,14 +29,16 @@ const HomePage = (props) => {
 			zapValue = 1;
 			SetMeta(zapValue);
 		}
-		if (zapValue > 4){
-			zapValue = 4;
+		if (zapValue > 8){
+			zapValue = 8;
 			SetMeta(zapValue);
 		}
 		SetMeta(zapValue);
 	}
 
 	useEffect(() => {
+		console.log(deck_act);
+		console.log(meta);
 		if ((deck_act !== "") && (meta !== 0))
 			SetBtn_Act("start-btn")
 		if (deck_act === "deckReact")

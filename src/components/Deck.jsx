@@ -32,7 +32,7 @@ const Deck = (props) => {
 		setAnsImg(value2);
 	}
 
-	const result = `${numA}/4 CONCLUÍDOS`
+	const result = `${numA}/${deck.length} CONCLUÍDOS`
 
 	return (
 		<div className="d-body">
@@ -49,8 +49,8 @@ const Deck = (props) => {
 					})}
 				</div>
 				</div>
-				<Result ansImg={ansImg} numA={numA} result={result} reset={reset} resetStates={resetStates} checkZaps={checkZaps} meta={meta}/>
 			</div>
+			<Result ansImg={ansImg} numA={numA} result={result} reset={reset} resetStates={resetStates} checkZaps={checkZaps} meta={meta}/>
 		</div>
 	)
 }

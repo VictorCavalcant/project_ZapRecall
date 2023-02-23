@@ -13,7 +13,7 @@ const Result = (props) => {
 		resetStates(0,[]);
 	}
 
-	const defaultCheck = (checkZaps() < meta) && numA === 4;
+	const defaultCheck = (checkZaps() < meta) && numA === 8;
 
 	return (
 		<>
@@ -36,7 +36,7 @@ const Result = (props) => {
 							<h1 className="btnr-text">REINICIAR RECALL</h1>
 					</button>
 			</div>
-			: (numA === 4) ? 
+			: (numA === 8) ? 
 			<div className="d-footer-result">
 				<div className="df-result-alert">
 					<img className="dfr-reaction" src={Yay} alt=""/>

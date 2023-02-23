@@ -14,7 +14,24 @@ export const deckR = [
 	{
 		question: "O ReactDOM nos ajuda __",
 		answer: "interagindo com a DOM para colocar componentes React na mesma"
+	},
+	{
+		question: "Podemos colocar __ dentro do JSX",
+		answer: "expressões"
+	},
+	{
+		question: "Usamos o npm para __",
+		answer: "gerenciar os pacotes necessários e suas dependências"
+	},
+	{
+		question: "Usamos props para __",
+		answer: "passar diferentes informações para componentes"
+	},
+	{
+		question: "Usamos estado (state) para __",
+		answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"
 	}
+	
 ]
 
 export const deckC = [
@@ -33,5 +50,21 @@ export const deckC = [
 	{
 		question: "A diferença entre a linguagem C e C++ é que:",
 		answer: "A C++ é orientada a objetos e a C é orientada a procedimentos"
+	},
+	{
+		question: "A diferença entre o tipo char e o tipo string é:",
+		answer: "O tipo char é apenas 1 caractere enquanto o tipo string é um conjunto de caracteres"
+	},
+	{
+		question: "Para declarar variáveis em C primeiro:",
+		answer: "Deve dizer o tipo e depois o nome da variavel"
+	},
+	{
+		question: "Para declarar constante usa-se:",
+		answer: "#DEFINE"
+	},
+	{
+		question: "A função printf faz:",
+		answer: "Imprime uma mensagem na tela"
 	}
 ]

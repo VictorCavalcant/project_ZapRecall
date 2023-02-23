@@ -14,11 +14,9 @@ input::-webkit-inner-spin-button {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	position: absolute;
-	top: 0;
-  left: 0;
 	width: 377px;
-	height: 667px;
+	height: 100vh;
+	margin: auto;
 	text-align: center;
 	background: #FB6B6B;
 }

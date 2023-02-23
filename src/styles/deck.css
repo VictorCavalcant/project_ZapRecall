@@ -3,27 +3,27 @@
 
 .d-body {
 	overflow: hidden;
-	position: absolute;
-	left: 0;
-	top: 0;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background: #FB6B6B;
-	flex-direction: column-reverse;
+	flex-direction: column;
+	margin: auto;
 	width: 375px;
-	height: 657px;
+	height: 100vh;
 }
 
 .d-container {
 	box-sizing: border-box;
-	overflow: scroll;
+	overflow: auto;
 	overflow-x: hidden;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-	width: 377px;
-  height: 667px;
+	width: 100vw;
+	height: 100vh;
 	text-align: center;
 	background: #FB6B6B;
 }
